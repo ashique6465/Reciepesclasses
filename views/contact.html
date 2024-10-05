@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confetti Cuisine | Contact</title>
+    <link rel="stylesheet" href="/bootstrap.css" />
+    <link rel="stylesheet" href="/confetti_cuisine.css" />
+  </head>
+
+  <body>
+    <div id="nav">
+      <div class="col-sm nav-align"><h1 id="title">Confetti Cuisine</h1></div>
+      <div class="col-sm nav-align">
+        <a href="/"> <span class="button">Home</span> </a>
+        <a href="/courses.html"> <span class="button">Courses</span> </a>
+        <a href="/contact.html"> <span class="button">Contact</span> </a>
+        <a href="/recipes.html"> <span class="button">Recipes</span> </a>
+        <a href="/gallery.html"> <span class="button">Gallery</span> </a>
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <div class="col-sm-6">
+        <img src="/images/graph.png" alt="Graph image" class="contact-img" />
+      </div>
+      <div class="col-sm-6 contact-form-wrapper">
+        <h1>Reach out to us!</h1>
+        <p>Enter your email if you're interested to learn more:</p>
+        
+        <form class="contact-form" id="contactForm">
+          <input type="email" name="email" required placeholder="Your email" />
+          <input class="button" type="submit" value="Submit" />
+        </form>
+        
+        <p>We'll get back to you soon!</p>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        
+        setTimeout(function() {
+          window.location.href = "/thanks.html";
+        }, 500); 
+      });
+    </script>
+  </body>
+
+</html>
